@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        nav {
+            width: 80%;
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        ul.submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover .submenu {
+            display: flex;
+        }
+        ul.submenu li {
+            width: 30%;
+            list-style: none;
+        }
+        ul.submenu h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Khóa học</a>
+                <ul class="submenu">
+                    <li>
+                        <h3>Chuyên đề WEB - PHP</h3>
+                        <p>Lập trình web với HTML5 - CSS3 - JQuery - Bootstrap - Ajax: [36 giờ]</p>
+                        <p>Lập trình web frontend - reactjs: [75 giờ]</p>
+                        <p>Lập trình web với mô hình MVC và PHP&MYSQL - PHP FRAMEWORK: [72 giờ]</p>
+                    </li>
+                    <li>
+                        <h3>Chuyên đề Mobile</h3>
+                        <p>Lập trình Games/Apps trên nền tảng Android: [120 giờ]</p>
+                        <p>Lập trình Games/Apps trên nền tảng IOS: [120 giờ]</p>
+                    </li>
+                    <li>
+                        <h3>Chuyên đề JAVA</h3>
+                        <p>Ngôn ngữ lập trình hướng đối tượng với java: [40 giờ]</p>
+                        <p>Lập trình ứng dụng với java: [100 giờ]</p>
+                        <p>Lập trình ứng dụng với java framework (JPA, HIBERNATE, SPRING MVC, SPRINGBOOT): [60 giờ]</p>
+                    </li>
+                    <li>
+                        <h3>Chuyên đề NETWORK/SECURITY</h3>
+                        <p>Khóa học Quản trị hệ thống mạng CCNA v6: [72 giờ]</p>
+                        <p>Khóa học Quản trị hệ thống với Windows SERVER 2012: [72 giờ]</p>
+                        <p>Khóa học Quản trị hệ thống CompTIA +: [110 giờ]</p>
+                    </li>
+                    <li>
+                        <h3>Chuyên đề .NET</h3>
+                        <p>Nền tảng lập trình hướng đối tượng với C#: [40 giờ]</p>
+                        <p>Lập trình ứng dụng WINDOWS FORM: [100 giờ]</p>
+                        <p>Lập trình Web với ASP.NET MVC 5, WebAPI: [60 giờ]</p>
+                    </li>
+                    <li>
+                        <h3>Chuyên đề khác</h3>
+                        <p>Ngôn ngữ lập trình C/C++: [80 giờ]</p>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

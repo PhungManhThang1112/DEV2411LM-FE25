@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                'header header header'
+                'nav nav nav'
+                'left body right'
+                'footer footer footer';
+            grid-gap: 10px;
+            padding: 10px;
+            
+        }
+        header {
+            grid-area: header;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        nav {
+            grid-area: nav;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        .left {
+            grid-area: left;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        .body {
+            grid-area: body;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        .right {
+            grid-area: right;
+            border: 1px solid green;
+            padding: 10px;
+        }
+        footer {
+            grid-area: footer;
+            border: 1px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav >Nav</nav>
+    <div class="left">Left</div>
+    <div class="body">Body</div>
+    <div class="right">Right</div>
+    <footer>Footer</footer>
+</body>
+</html>

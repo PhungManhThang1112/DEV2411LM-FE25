@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8 - Menu Điều Hướng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: green;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: green;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+        nav ul li ul li {
+            border-bottom: 1px solid white;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li a {
+            padding: 10px;
+            color: white;
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Engineering</a></li>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Consultancy</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 style="color: red; position: absolute; top: 10px; left: 10px;"></h1>
+</body>
+</html>

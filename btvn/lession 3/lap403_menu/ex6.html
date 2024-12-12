@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 100%;
+        }
+        nav ul li ul li a {
+            padding: 12px 16px;
+        }
+        nav ul li ul li a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Điện máy</a></li>
+            <li><a href="#">Đồ gia dụng</a></li>
+            <li><a href="#">Công cụ & Dụng cụ</a>
+                <ul>
+                    <li><a href="#">Máy khoan</a>
+                        <ul>
+                            <li><a href="#">Máy khoan pin</a></li>
+                            <li><a href="#">Máy khoan động lực</a></li>
+                            <li><a href="#">Máy khoan bê tông, Máy khoan búa</a></li>
+                            <li><a href="#">Máy đục bê tông</a></li>
+                            <li><a href="#">Máy khoan cầm tay gia đình</a></li>
+                            <li><a href="#">Máy khoan mini</a></li>
+                            <li><a href="#">Máy khoan rút lõi bê tông</a></li>
+                            <li><a href="#">Máy khoan góc</a></li>
+                            <li><a href="#">Máy khoan bàn</a></li>
+                            <li><a href="#">Máy khoan từ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Máy bơm nước chảy dầu</a></li>
+                    <li><a href="#">Máy bơm nước chạy xăng</a></li>
+                    <li><a href="#">Máy gieo hạt</a></li>
+                    <li><a href="#">Máy hàn điện tử</a>
+                        <ul>
+                            <li><a href="#">Máy hàn que</a></li>
+                            <li><a href="#">Máy cắt Plasma</a></li>
+                            <li><a href="#">Máy hàn Tig</a></li>
+                            <li><a href="#">Máy hàn Mag</a></li>
+                            <li><a href="#">Máy hàn Mig</a></li>
+                            <li><a href="#">Máy hàn đa năng</a></li>
+                            <li><a href="#">Biến thế hàn</a></li>
+                            <li><a href="#">Máy hàn công nghiệp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Y tế & Sức khỏe</a></li>
+            <li><a href="#">Thể thao & Ngoài trời</a></li>
+            <li><a href="#">Thiết bị văn phòng</a></li>
+            <li><a href="#">Thiết bị số, Phụ kiện</a></li>
+            <li><a href="#">Thiết bị công nghiệp</a></li>
+            <li><a href="#">Nhà cửa & Đời sống</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
